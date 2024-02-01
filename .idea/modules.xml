@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kafka_practice.iml" filepath="$PROJECT_DIR$/.idea/Kafka_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listener-ride-requests/listener-ride-requests.iml" filepath="$PROJECT_DIR$/listener-ride-requests/listener-ride-requests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ride-requests/ride-requests.iml" filepath="$PROJECT_DIR$/ride-requests/ride-requests.iml" />
+    </modules>
+  </component>
+</project>
