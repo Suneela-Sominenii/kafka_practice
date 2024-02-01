@@ -12,15 +12,17 @@ public class RideRequestProducer {
     @Autowired
     private KafkaTemplate<String, RideRequest> kafkaTemplate;
 
-//    public void sendRideRequests(KafkaTemplate<String,RideRequest> kafkaTemplate){
-//        this.kafkaTemplate = kafkaTemplate;
-//    }
+    public void sendRideRequests(KafkaTemplate<String,RideRequest> kafkaTemplate){
+        this.kafkaTemplate = kafkaTemplate;
+    }
 
 
     public void sendRideRequest(RideRequest rideRequest){
         try{
-            kafkaTemplate.send(topic,rideRequest);
             System.out.println("Sending event...");
+            System.out.println(rideRequest);
+            kafkaTemplate.send(topic,rideRequest);
+
         } catch (Exception e) {
             System.out.println("Error sending event...,,,,");
             throw new RuntimeException(e);
